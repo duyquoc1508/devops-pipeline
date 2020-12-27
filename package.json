@@ -1,8 +1,12 @@
 {
   "name": "devops-pipeline",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo Github Action Workflow + Docker Build & Push",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duyquoc1508/devops-pipeline.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
