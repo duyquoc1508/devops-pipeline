@@ -1,0 +1,14 @@
+# name of workflows
+name: devops-pipeline
+# define events workflow will run
+on:
+  push:
+    branches: [master] # run this workflow when push branch master
+
+# Jobs is a chain task defined to execute a function in pipeline. One workflow can have multiple jobs
+jobs:
+  docker: # name job
+    runs-on: ubuntu-latest # config environment run this job
+    steps: # define task of this job
+      - name: Checkout # name of step => responsible: pull source code from repository to this device
+        uses: actions/checkout@v2 # action build in of Github workflow
